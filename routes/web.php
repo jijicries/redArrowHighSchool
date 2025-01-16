@@ -18,5 +18,6 @@ use App\Http\Controllers\Controller;
 //     return view('welcome');
 // });
 
-Route::get('/homepage', [Controller:: class, 'homepage'])-> name('homepage');
+Route::get('/', [Controller:: class, 'homepage'])-> name('homepage');
+// Route::get('/homepage', [Controller:: class, 'homepage'])-> name('homepage');
 
