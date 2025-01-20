@@ -21,6 +21,7 @@ export default {
         maroon: '#800000', // Define maroon color
         whitesmoke: '#F5F5F5'
       },
+      
     },
   },
   plugins: [

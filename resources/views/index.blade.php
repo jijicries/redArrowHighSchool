@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
   <!-- @vite('resources/css/app.css') -->
   @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
@@ -102,14 +104,15 @@
     </div>
 
     <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-        <div>
-            <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
-            Empowering Minds, Shaping Futures – Discover Excellence at <span class="text-maroon">Red Arrow High School</span>
-            </h1>
-            <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
-            At Red Arrow High School, we cultivate future leaders through academic excellence, character development, and passion for success.
-            </p>
-        </div>
+    <div data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
+    <h1 class="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+        Empowering Minds, Shaping Futures – Discover Excellence at <span class="text-maroon">Red Arrow High School</span>
+    </h1>
+    <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">
+        At Red Arrow High School, we cultivate future leaders through academic excellence, character development, and passion for success.
+    </p>
+</div>
+
     </div>
 
 
@@ -117,10 +120,6 @@
       <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
     </div>
 </div>
-
-
-
-
 
 <div>
     <section class="bg-white dark:bg-gray-900 bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern.svg')] dark:bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/hero-pattern-dark.svg')]">
@@ -134,31 +133,52 @@
             <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-5xl dark:text-white">Choose Your Path: Explore Our Educational Strands</h1>
             <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-200">At <span class="text-lg font-bold text-maroon">Red Arrow High School</span>, we offer various academic strands designed to meet your interests and career aspirations. Whether you are inclined towards Science, Business, Humanities, or Technical Vocational Education, we have a path for you!</p>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-6">
                 <!-- STEM -->
-                <div class="bg-gray-100 p-6 rounded-lg shadow-md dark:bg-gray-800">
-                    <h2 class="text-2xl font-semibold text-gray-900 dark:text-white">STEM</h2>
-                    <p class="text-gray-600 dark:text-gray-400">The Science, Technology, Engineering, and Mathematics (STEM) strand prepares students for careers in engineering, technology, research, and more.</p>
+                <div class="bg-gradient-to-r from-blue-500 to-teal-500 p-6 rounded-lg transform hover:scale-105 transition-transform shadow-md dark:bg-gray-800">
+                    <div class="flex items-center mb-4">
+                        <img src="https://img.icons8.com/ios-filled/50/ffffff/engineering.png" alt="STEM Icon" class="w-10 h-10 mr-3">
+                        <h2 class="text-2xl font-semibold text-white">STEM</h2>
+                    </div>
+                    <p class="text-white">
+                        The Science, Technology, Engineering, and Mathematics (STEM) strand prepares students for careers in engineering, technology, research, and more.
+                    </p>
                 </div>
-                
+
                 <!-- ABM -->
-                <div class="bg-gray-100 p-6 rounded-lg shadow-md dark:bg-gray-800">
-                    <h2 class="text-2xl font-semibold text-gray-900 dark:text-white">ABM</h2>
-                    <p class="text-gray-600 dark:text-gray-400">The Accountancy, Business, and Management (ABM) strand is perfect for students interested in business, finance, and management careers.</p>
+                <div class="bg-gradient-to-r from-yellow-500 to-orange-500 p-6 rounded-lg transform hover:scale-105 transition-transform shadow-md dark:bg-gray-800">
+                    <div class="flex items-center mb-4">
+                        <img src="https://img.icons8.com/ios-filled/50/ffffff/business.png" alt="ABM Icon" class="w-10 h-10 mr-3">
+                        <h2 class="text-2xl font-semibold text-white">ABM</h2>
+                    </div>
+                    <p class="text-white">
+                        The Accountancy, Business, and Management (ABM) strand is perfect for students interested in business, finance, and management careers.
+                    </p>
                 </div>
 
                 <!-- HUMMS -->
-                <div class="bg-gray-100 p-6 rounded-lg shadow-md dark:bg-gray-800">
-                    <h2 class="text-2xl font-semibold text-gray-900 dark:text-white">HUMMS</h2>
-                    <p class="text-gray-600 dark:text-gray-400">The Humanities and Social Sciences (HUMMS) strand is ideal for those interested in arts, communication, psychology, and other human-centered fields.</p>
+                <div class="bg-gradient-to-r from-purple-500 to-pink-500 p-6 rounded-lg transform hover:scale-105 transition-transform shadow-md dark:bg-gray-800">
+                    <div class="flex items-center mb-4">
+                        <img src="https://img.icons8.com/ios-filled/50/ffffff/paint-palette.png" alt="HUMMS Icon" class="w-10 h-10 mr-3">
+                        <h2 class="text-2xl font-semibold text-white">HUMMS</h2>
+                    </div>
+                    <p class="text-white">
+                        The Humanities and Social Sciences (HUMMS) strand is ideal for those interested in arts, communication, psychology, and other human-centered fields.
+                    </p>
                 </div>
 
                 <!-- TVL -->
-                <div class="bg-gray-100 p-6 rounded-lg shadow-md dark:bg-gray-800">
-                    <h2 class="text-2xl font-semibold text-gray-900 dark:text-white">TVL</h2>
-                    <p class="text-gray-600 dark:text-gray-400">The Technical-Vocational-Livelihood (TVL) strand equips students with practical skills in fields such as hospitality, electronics, and more.</p>
+                <div class="bg-gradient-to-r from-green-500 to-lime-500 p-6 rounded-lg transform hover:scale-105 transition-transform shadow-md dark:bg-gray-800">
+                    <div class="flex items-center mb-4">
+                        <img src="https://img.icons8.com/ios-filled/50/ffffff/tools.png" alt="TVL Icon" class="w-10 h-10 mr-3">
+                        <h2 class="text-2xl font-semibold text-white">TVL</h2>
+                    </div>
+                    <p class="text-white">
+                        The Technical-Vocational-Livelihood (TVL) strand equips students with practical skills in fields such as hospitality, electronics, and more.
+                    </p>
                 </div>
             </div>
+
         </div>
     </section>
 </div>
@@ -215,25 +235,7 @@
       </button>
   </div>
 
-  <div class="grid gap-2 p-4 sm:grid-cols-1 md:grid-cols-4 lg:grid-cols-6 w-full max-w-screen-xl mx-auto p-4 md:py-8">
-    <!-- Left Column -->
-    <div class="bg-white"></div>
-
-    <!-- Center Column -->
-    <div class="bg-white md:col-span-2 lg:col-span-4">
-        <div class="flex flex-col items-center bg-white md:flex-row md:max-w-full">
-            <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-80 md:rounded-none md:rounded-s-lg" src="img/founder.jpg" alt="">
-            <div class="flex flex-col justify-between p-4 leading-normal">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
-                <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- Right Column -->
-    <div class="bg-white"></div>
-</div>
-
+  
 <!-- Add spacing between the carousel and the footer -->
 <div class="relative mt-8">
     <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
@@ -257,6 +259,10 @@
 
 
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 
 
 </body>
